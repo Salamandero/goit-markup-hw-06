@@ -750,7 +750,9 @@ align-items: center;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
-
+.footer-subscribe-email:hover{
+  border-color: var(--accent-color);
+}
 .footer-subscribe-email::placeholder{
   font-size: 16px;
   line-height: 1.25;
@@ -851,12 +853,11 @@ background: #188ce8;
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
-  line-height: 1.667;
+  line-height: 1.167;
   letter-spacing: 0.01em;
   
   color: var(--text-color);
 }
-
 .contact-form-input-wrapper{
   margin-bottom: 10px;
   position: relative;
@@ -866,6 +867,7 @@ background: #188ce8;
   height: 40px;
   padding-left: 42px;
   
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 250ms var(--timing-function);
@@ -911,7 +913,7 @@ background: #188ce8;
  }
 .contact-form-message::placeholder{
 font-size: 12px;
-line-height: 1.667;
+line-height: 1.167;
 letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
 
@@ -948,9 +950,11 @@ margin-right: 8.38PX;
  background-origin: border-box;
  border-color: transparent;
 }
-.contact-form-checkbox:focus + .contact-form-checkbox-label::before {
+/* При фокусі на кнопку чекбокса автоматично підхоплюється рамка 
+і подібно відображатиметься на нашій псевдорамці*/
+/* .contact-form-checkbox:focus + .contact-form-checkbox-label::before {
 outline: 1px solid var(--primary-text-color);
-}
+} */
 .checkbox-agreement{
 color: var(--accent-color);
 transition: color 250ms var(--timing-function);
@@ -980,7 +984,7 @@ transition: color 250ms var(--timing-function);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  transition: background 250ms var(--timing-function);
+    transition: background 250ms var(--timing-function);
 }
 
 .contact-form-submit:hover,
